@@ -1,0 +1,209 @@
+{
+  "config": {
+    "planetRadius": 25,
+    "density": 0.85,
+    "minimumPOIDistance": 4,
+    "roadDensity": 0.9,
+    "decorationDensity": 0.85,
+    "dayLengthSeconds": 60,
+    "seasonLengthSeconds": 300
+  },
+  "pois": [
+    {
+      "id": "hometown",
+      "type": "hometown",
+      "title": "Origin Point - Maple Valley",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "visual": {
+        "building": "home",
+        "scale": 1.2,
+        "color": "#e07a5f",
+        "roofColor": "#3d405b",
+        "sign": "Hometown"
+      },
+      "content": {
+        "period": "1998 - 2016",
+        "role": "Aspiring Creator",
+        "summary": "Where it all began. Spent early years taking apart old computers, creating custom game maps, and writing early BASIC & HTML code.",
+        "skills": ["Curiosity", "Self-Taught Coding", "HTML/CSS", "Hardware Hacking"],
+        "achievements": [
+          "Built first personal computer at age 12",
+          "Created local community web forum",
+          "Won high school science fair with interactive physics demo"
+        ]
+      }
+    },
+    {
+      "id": "highschool",
+      "type": "education",
+      "title": "Oakridge Academy",
+      "coordinates": {
+        "latitude": 18,
+        "longitude": 25
+      },
+      "visual": {
+        "building": "school",
+        "scale": 1.3,
+        "color": "#81b29a",
+        "roofColor": "#f2cc8f",
+        "sign": "High School"
+      },
+      "content": {
+        "period": "2012 - 2016",
+        "role": "Computer Club Lead",
+        "summary": "Formed the school's robotics and game dev club. Developed 2D indie games in Java and C++.",
+        "skills": ["Java", "C++", "Mathematics", "Team Leadership"],
+        "projects": [
+          {
+            "title": "Retro Arcade Simulator",
+            "description": "2D tile-based game engine built from scratch in Java Swing.",
+            "technologies": ["Java", "AWT", "Custom Game Loop"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "university",
+      "type": "education",
+      "title": "Polytechnic University",
+      "coordinates": {
+        "latitude": 32,
+        "longitude": -35
+      },
+      "visual": {
+        "building": "university",
+        "scale": 1.5,
+        "color": "#3a86ff",
+        "roofColor": "#003049",
+        "sign": "University"
+      },
+      "content": {
+        "period": "2016 - 2020",
+        "role": "B.S. Computer Science & Computer Graphics",
+        "summary": "Focused heavily on computer graphics, 3D linear algebra, parallel computing, and web technologies.",
+        "skills": ["OpenGL", "WebGL", "TypeScript", "Algorithms", "Linear Algebra"],
+        "achievements": [
+          "Graduated Summa Cum Laude",
+          "Published research paper on real-time voxel raymarching",
+          "Lead graphics programmer for senior capstone VR experience"
+        ]
+      }
+    },
+    {
+      "id": "first_job",
+      "type": "work",
+      "title": "PixelCraft Studios",
+      "coordinates": {
+        "latitude": -15,
+        "longitude": 40
+      },
+      "visual": {
+        "building": "studio",
+        "scale": 1.4,
+        "color": "#ff006e",
+        "roofColor": "#8338ec",
+        "sign": "PixelCraft"
+      },
+      "content": {
+        "period": "2020 - 2022",
+        "role": "Junior Graphics & Frontend Engineer",
+        "summary": "Engineered high-performance web-based 3D configurators and interactive web applications.",
+        "skills": ["Three.js", "WebGL", "React", "Shader Coding (GLSL)"],
+        "projects": [
+          {
+            "title": "3D Product Customizer",
+            "description": "Real-time web browser 3D product customizer serving 2M+ monthly users.",
+            "technologies": ["Three.js", "GLSL Shaders", "React"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "current_work",
+      "type": "work",
+      "title": "Nova Tech Labs",
+      "coordinates": {
+        "latitude": -30,
+        "longitude": -45
+      },
+      "visual": {
+        "building": "office",
+        "scale": 1.6,
+        "color": "#00f5d4",
+        "roofColor": "#050510",
+        "sign": "Nova Labs"
+      },
+      "content": {
+        "period": "2022 - Present",
+        "role": "Senior 3D / Frontend Engineer",
+        "summary": "Leading frontend architecture for spatial web experiences, WebGPU engines, and interactive real-time visual tools.",
+        "skills": ["TypeScript", "Three.js / WebGPU", "React", "System Architecture", "Performance Optimization"],
+        "achievements": [
+          "Reduced 3D scene load time by 65% using custom asset streaming",
+          "Architected modular engine framework used across 4 main products",
+          "Mentored 6 junior/mid-level engineers"
+        ]
+      }
+    },
+    {
+      "id": "retro_arcade",
+      "type": "hobby",
+      "title": "Retro Game Arcade & Modding Lab",
+      "coordinates": {
+        "latitude": 45,
+        "longitude": 80
+      },
+      "visual": {
+        "building": "arcade",
+        "scale": 1.3,
+        "color": "#ffbe0b",
+        "roofColor": "#fb5607",
+        "sign": "Arcade"
+      },
+      "content": {
+        "period": "Ongoing",
+        "role": "Retro Hardware & Game Dev Enthusiast",
+        "summary": "Restoring retro arcade cabinets, writing homebrew games for classic consoles, and exploring early 3D engine techniques.",
+        "skills": ["C/C++ Assembly", "CRT Display Calibration", "Hardware Soldering", "Emulation"],
+        "projects": [
+          {
+            "title": "Custom Bartop Arcade Machine",
+            "description": "Built a custom dual-player bartop cabinet powered by Raspberry Pi and retro-arch.",
+            "technologies": ["Woodworking", "Electronics", "Linux"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "open_source_park",
+      "type": "project",
+      "title": "Open Source Commons",
+      "coordinates": {
+        "latitude": -40,
+        "longitude": 90
+      },
+      "visual": {
+        "building": "park",
+        "scale": 1.3,
+        "color": "#52b788",
+        "roofColor": "#2d6a4f",
+        "sign": "OS Commons"
+      },
+      "content": {
+        "period": "2018 - Present",
+        "role": "Maintainer & Contributor",
+        "summary": "Active contributor to open source WebGL utilities, math libraries, and procedural generation tools.",
+        "skills": ["Open Source", "npm packages", "CI/CD", "Documentation"],
+        "links": [
+          {
+            "label": "GitHub Profile",
+            "url": "https://github.com"
+          }
+        ]
+      }
+    }
+  ]
+}
