@@ -22,7 +22,7 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install dependencies yes
         run: npm ci
 
       - name: Verify TypeScript & Build Project
