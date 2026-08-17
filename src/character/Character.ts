@@ -147,12 +147,21 @@ export class Character {
     // Compute movement direction vector aligned with camera frame on tangent plane
     const moveDir = new THREE.Vector3()
       .addScaledVector(cameraRight, inputDir.x)
-      .addScaledVector(cameraForward, -inputDir.y);
+      .addScaledVector(cameraForward, inputDir.y);
 
     // Project moveDir onto local planet tangent plane
     moveDir.sub(up.clone().multiplyScalar(moveDir.dot(up))).normalize();
 
     if (moveDir.lengthSq() < 0.001) return;
+
+    // Smoothly rotate facing direction towards moveDir (slower rotation)
+    if (this.forward.dot(moveDir) < -0.99) {
+      const side = new THREE.Vector3().crossVectors(up, this.forward).normalize();
+      this.forward.addScaledVector(side, 0.1).normalize();
+    }
+    const turnRate = 6.0;
+    this.forward.lerp(moveDir, Math.min(1.0, turnRate * delta));
+    this.forward.sub(up.clone().multiplyScalar(this.forward.dot(up))).normalize();
 
     // Travel distance along curved surface arc
     const distance = this.speed * delta;
@@ -164,9 +173,6 @@ export class Character {
 
     // Rotate position vector around sphere center
     this.position.applyQuaternion(rotationQuaternion);
-
-    // Update facing direction
-    this.forward.copy(moveDir);
 
     this.updateTransform();
     this.animateWalk(delta);
