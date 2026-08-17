@@ -1,6 +1,6 @@
 {
   "config": {
-    "planetRadius": 25,
+    "planetRadius": 15,
     "density": 0.85,
     "minimumPOIDistance": 4,
     "roadDensity": 0.9,
