@@ -6,7 +6,7 @@
     "roadDensity": 0.9,
     "decorationDensity": 0.85,
     "dayLengthSeconds": 60,
-    "seasonLengthSeconds": 300
+    "seasonLengthSeconds": 60
   },
   "pois": [
     {
